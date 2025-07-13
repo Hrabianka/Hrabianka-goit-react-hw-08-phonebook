@@ -1,0 +1,13 @@
+.label {
+  margin: 10px 0;
+  font-weight: 800;
+}
+
+.searchBox {
+  border-radius: 4px;
+  padding-left: 35px;
+}
+
+.debounceInput {
+  padding: 5px 10px;
+}

@@ -1,0 +1,24 @@
+.header {
+  background-color: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.navWidth {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.userMenu {
+  display: flex;
+  justify-content: left;
+}
+
+.userNav {
+  display: flex;
+  justify-content: right;
+}

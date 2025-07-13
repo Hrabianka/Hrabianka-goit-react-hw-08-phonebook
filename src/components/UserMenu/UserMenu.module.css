@@ -1,0 +1,26 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.welcome {
+  margin-right: 8px;
+  font-weight: 500;
+  color: #242424;
+}
+
+.username {
+  margin-right: 8px;
+  font-weight: 800;
+  color: #5046e5;
+}
+
+.logoutButton {
+  color: #242424 !important;
+}
+
+.logoutButton:hover {
+  color: #fff !important;
+  background-color: #5046e5 !important;
+}

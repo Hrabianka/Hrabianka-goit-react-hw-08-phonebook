@@ -1,0 +1,32 @@
+.filter {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.addContact {
+  background-color: #5046e5;
+  color: #fff;
+}
+
+.addContact:hover {
+  background-color: #4135de;
+}
+
+.saveButton {
+  background-color: #5046e5;
+}
+
+.saveButton:hover {
+  background-color: #4135de;
+}
+
+.icon {
+  color: #4c5564;
+}
+
+.inputGroup:focus-within .icon {
+  color: #5046e5;
+}
