@@ -1,73 +1,21 @@
-import React, { useRef, useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { logout } from '../../redux/auth/authOperation';
-import { useAuth } from '../../hooks/useAuth';
-import {
-  Box,
-  IconButton,
-  Text,
-  AlertDialog,
-  AlertDialogBody,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogContent,
-  AlertDialogOverlay,
-  Button,
-} from '@chakra-ui/react';
-import { FiLogOut } from 'react-icons/fi';
-import css from './UserMenu.module.css';
+import { logOut } from '../../redux/auth/operations';
+import { useAuth } from 'hooks/useAuth';
+import { Box, Text } from '@chakra-ui/react';
+import { Button } from './UserMenu.styled';
 
 export const UserMenu = () => {
   const dispatch = useDispatch();
   const { user } = useAuth();
-  const [isOpen, setIsOpen] = useState(false);
-  const onClose = () => setIsOpen(false);
-  const cancelRef = useRef();
-
-  const handleLogout = () => {
-    dispatch(logout());
-    onClose();
-  };
 
   return (
-    <Box className={css.wrapper}>
-      <Text className={css.welcome}>
-        Welcome, <span className={css.username}>{user.email}</span>
+    <Box display="flex" alignItems="center">
+      <Text fontSize="18px" margin="15px" color="#f5f5f5">
+        Welcome, {user.name}{' '}
       </Text>
-      <IconButton
-        aria-label="Logout"
-        icon={<FiLogOut />}
-        onClick={() => setIsOpen(true)}
-        variant="ghost"
-        className={css.logoutButton}
-      />
-
-      <AlertDialog
-        isOpen={isOpen}
-        leastDestructiveRef={cancelRef}
-        onClose={onClose}
-        motionPreset="slideInBottom"
-        isCentered
-      >
-        <AlertDialogOverlay>
-          <AlertDialogContent>
-            <AlertDialogHeader fontSize="lg" fontWeight="bold">
-              Logout
-            </AlertDialogHeader>
-
-            <AlertDialogBody>Are you sure you want to logout?</AlertDialogBody>
-
-            <AlertDialogFooter>
-              <Button ref={cancelRef} onClick={onClose}>
-                Cancel
-              </Button>
-              <Button colorScheme="red" onClick={handleLogout} ml={3}>
-                Logout
-              </Button>
-            </AlertDialogFooter>
-          </AlertDialogContent>
-        </AlertDialogOverlay>
-      </AlertDialog>
+      <Button type="button" onClick={() => dispatch(logOut())}>
+        Logout
+      </Button>
     </Box>
   );
 };

@@ -1,38 +1,26 @@
-import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { setFilter } from '../../redux/filter/filterSlice';
-import { selectFilter } from '../../redux/selectors';
-import { DebounceInput } from 'react-debounce-input';
-import { InputGroup, InputLeftElement, Input, Stack } from '@chakra-ui/react';
-import { FaSearch } from 'react-icons/fa';
-import css from './Filter.module.css';
+import { Label, FindInput } from './Filter.styled';
+import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { filterChange } from '../../redux/contacts/filterSlice';
 
 export const Filter = () => {
   const dispatch = useDispatch();
-  const filter = useSelector(selectFilter);
-
-  const handleFilterChange = e => {
-    dispatch(setFilter(e.target.value.trim()));
+  const onWrite = e => {
+    dispatch(filterChange(e.currentTarget.value));
   };
 
   return (
-    <Stack spacing={4}>
-      <InputGroup>
-        <InputLeftElement pointerEvents="none">
-          <FaSearch color="gray" />
-        </InputLeftElement>
-        <DebounceInput
-          element={Input}
-          type="text"
-          name="filter"
-          placeholder="Search by name"
-          value={filter}
-          onChange={handleFilterChange}
-          debounceTimeout={500}
-          className={css.searchBox}
-          focusBorderColor="#5046e5"
-        />
-      </InputGroup>
-    </Stack>
+    <Label>
+      <FindInput
+        type="text"
+        name="filter"
+        placeholder="Find contacts by name"
+        onChange={onWrite}
+      />
+    </Label>
   );
+};
+
+Label.propTypes = {
+  filter: PropTypes.string,
 };
