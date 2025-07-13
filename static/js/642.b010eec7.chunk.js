@@ -108,7 +108,7 @@
   font-size: 20px;
   font-weight: 700;
   line-height: 1.15;
-  color: #dcdcdc; /* темний колір тексту */
+  color: #dcdcdc; 
 `,v=(0,o.Ay)(y.D0)`
   all: unset;
   display: flex;
@@ -116,7 +116,7 @@
   margin: 10px 0;
   padding: 15px;
   font-size: 20px;
-  color: #dcdcdc; /* темний колір тексту */
+  color: #dcdcdc;
 
   &:focus-visible {
     border-radius: 4px;
@@ -147,4 +147,4 @@
   margin: 0 auto;
   padding: 0 15px;
 `,I=e=>e.phonebook.contacts.items,V=e=>e.phonebook.contacts.isLoading,N=e=>e.phonebook.contacts.error,R=e=>{const n=I(e),t=(e=>e.filter)(e);return n.filter(e=>e.name.toLowerCase().includes(t.toLowerCase()))};var _=t(5043);function F(){const e=(0,p.wA)(),n=(0,p.d4)(I),t=(0,p.d4)(V),o=(0,p.d4)(N),i=(0,p.d4)(R);return(0,_.useEffect)(()=>{e((0,u.oe)())},[e]),(0,a.jsxs)(q,{children:[(0,a.jsx)(T,{handleSubmit:(t,o)=>{let{resetForm:i}=o;var a;a=t,n.find(e=>e.name.toLowerCase()===a.name.toLowerCase())?alert(`${a.name} is already in contacts`):e((0,u.IP)(a)),i()}}),(0,a.jsx)(f,{}),(0,a.jsxs)(d,{title:"Contacts list",children:[t&&(0,a.jsx)("p",{children:"Loading contacts..."}),o&&(0,a.jsx)("p",{children:o}),n.length>0&&(0,a.jsx)(b,{contacts:i})]})]})}}}]);
-//# sourceMappingURL=642.201e1c5e.chunk.js.map
+//# sourceMappingURL=642.b010eec7.chunk.js.map
