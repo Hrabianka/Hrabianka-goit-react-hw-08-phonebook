@@ -12,7 +12,7 @@ export const fetchContacts = createAsyncThunk(
     } catch (error) {
       return rejectWithValue(error.message);
     }
-  }
+  } 
 );
 
 export const addContact = createAsyncThunk(
