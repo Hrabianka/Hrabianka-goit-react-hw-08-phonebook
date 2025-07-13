@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Hrabianka-goit-react-hw-08-phonebook/static/css/main.10933ae4.css",
-    "main.js": "/Hrabianka-goit-react-hw-08-phonebook/static/js/main.d0a1cf9c.js",
+    "main.js": "/Hrabianka-goit-react-hw-08-phonebook/static/js/main.c2b458c1.js",
     "static/js/936.31248a81.chunk.js": "/Hrabianka-goit-react-hw-08-phonebook/static/js/936.31248a81.chunk.js",
     "static/js/116.013c6c97.chunk.js": "/Hrabianka-goit-react-hw-08-phonebook/static/js/116.013c6c97.chunk.js",
     "static/js/660.e8271aaf.chunk.js": "/Hrabianka-goit-react-hw-08-phonebook/static/js/660.e8271aaf.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/236.5106f6ea.chunk.js": "/Hrabianka-goit-react-hw-08-phonebook/static/js/236.5106f6ea.chunk.js",
     "index.html": "/Hrabianka-goit-react-hw-08-phonebook/index.html",
     "main.10933ae4.css.map": "/Hrabianka-goit-react-hw-08-phonebook/static/css/main.10933ae4.css.map",
-    "main.d0a1cf9c.js.map": "/Hrabianka-goit-react-hw-08-phonebook/static/js/main.d0a1cf9c.js.map",
+    "main.c2b458c1.js.map": "/Hrabianka-goit-react-hw-08-phonebook/static/js/main.c2b458c1.js.map",
     "936.31248a81.chunk.js.map": "/Hrabianka-goit-react-hw-08-phonebook/static/js/936.31248a81.chunk.js.map",
     "116.013c6c97.chunk.js.map": "/Hrabianka-goit-react-hw-08-phonebook/static/js/116.013c6c97.chunk.js.map",
     "660.e8271aaf.chunk.js.map": "/Hrabianka-goit-react-hw-08-phonebook/static/js/660.e8271aaf.chunk.js.map",
@@ -20,6 +20,6 @@
   },
   "entrypoints": [
     "static/css/main.10933ae4.css",
-    "static/js/main.d0a1cf9c.js"
+    "static/js/main.c2b458c1.js"
   ]
 }
